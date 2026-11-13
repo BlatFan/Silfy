@@ -1,0 +1,32 @@
+{
+  "audio": {
+    "sampleRate": 16000,
+    "blockSize": 1600,
+    "device": null,
+    "queueCapacity": 32
+  },
+  "kws": {
+    "checkpoint": "models/wakeword/silfy.pt",
+    "threshold": 0.88,
+    "windowSeconds": 1.0,
+    "scanIntervalSeconds": 0.2,
+    "cooldownSeconds": 1.5
+  },
+  "asr": {
+    "tokens": "models/asr/ru/tokens.txt",
+    "encoder": "models/asr/ru/encoder.onnx",
+    "decoder": "models/asr/ru/decoder.onnx",
+    "joiner": "models/asr/ru/joiner.onnx",
+    "sampleRate": 16000,
+    "numThreads": 2
+  },
+  "tts": {
+    "model": "models/tts/ru/model.onnx",
+    "tokens": "models/tts/ru/tokens.txt",
+    "lexicon": "",
+    "speakerId": 0,
+    "speed": 1.0,
+    "volume": 0.85,
+    "numThreads": 2
+  }
+}
